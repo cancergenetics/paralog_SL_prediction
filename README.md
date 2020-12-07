@@ -10,7 +10,7 @@
 | 04_make_predictions              | Fig. 3, S2, S4          | Make predictions for ind. combinatorial screens + all paralog pairs |
 | 05_explain_predictions           | Fig. 4, 5A, 5B, 5D, S5  | Generate SHAP profiles for indv. predictions |
 | 06_compare_slant                 | Fig. S3                 | Compare performance of RF predictions to that of SLant predictions |
-| 07_experimental_validation       | Fig. 5C, 5E             | Graph siRNA screen results for ASF1A/B and COPS7A/B |
+| 07_experimental_validation       | Fig. 5C, 5E             | Graph siRNA screen results for *ASF1A/ASF1B* and *COPS7A/COPS7B* |
 | 08_human_vs_cerevisiae_paralogs  | NA                      | Compare the avg. family size for paralogs in humans vs. cerevisiae yeast |
 
 
