@@ -1,0 +1,25 @@
+import matplotlib as mpl
+
+mpl.rcParams.update({
+    'svg.fonttype':'none', 
+    'font.family':'Arial',
+    'text.usetex': False,
+    'axes.spines.top': False,
+    'axes.spines.right': False, 
+    'axes.axisbelow': True,
+    'axes.linewidth':0.8,
+    'font.size':9,
+    'axes.labelsize':9,
+    'legend.fontsize':9,
+    'xtick.labelsize':8,
+    'ytick.labelsize':8,
+    'lines.linewidth':1,
+    'figure.dpi': 100,
+    'lines.linewidth':1,
+    'grid.color': '#EFEFEF',
+    'figure.facecolor':'white',
+    'legend.edgecolor': '1',
+    'legend.facecolor':'#fff',
+    'legend.frameon':True,
+    'legend.framealpha': 0.9,
+})

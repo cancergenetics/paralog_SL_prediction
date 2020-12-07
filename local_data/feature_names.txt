@@ -1,0 +1,27 @@
+simple_name	feature	category
+Sequence Identity	min_sequence_identity	Sequence
+Max Sequence Identity	max_sequence_identity	Sequence
+Closest Paralog	closest	Sequence
+Family Size	family_size	Sequence
+Whole Genome Duplicates	WGD	Sequence
+S. pombe Ortholog	has_pombe_ortholog	Sequence
+Essential S. pombe Ortholog	has_essential_pombe_ortholog	Sequence
+Single Essential S. pombe Ortholog	has_single_essential_pombe_ortholog	Sequence
+S. cerevisiae Ortholog	has_cerevisiae_ortholog	Sequence
+Essential S. cerevisiae Ortholog	has_essential_cerevisiae_ortholog	Sequence
+Single Essential S. cerevisiae Ortholog	has_single_essential_cerevisiae_ortholog	Sequence
+Conservation Score	conservation_score	Sequence
+Gene Age	mean_age	Sequence
+Shared Domains	shared_domains	Sequence
+Gene Length Ratio	cds_length_ratio	Sequence
+Shared Protein-Protein Interactors	fet_ppi_overlap	Neighborhood
+Pair Protein-Protein Interaction	interact	Neighborhood
+Total Protein-Protein Interactors	n_total_ppi	Neighborhood
+Essentiality of Shared PPIs	shared_ppi_mean_essentiality	Neighborhood
+Protein Complex Membership	either_in_complex	Neighborhood
+Essential Protein Complex Membership	either_in_essential_complex	Neighborhood
+Essentiality of Protein Complex(es)	mean_complex_essentiality	Neighborhood
+Colocalisation	colocalisation	Neighborhood
+Expression Correlation	gtex_spearman_corr	Expression
+Mean Expression (Lower)	gtex_min_mean_expr	Expression
+Mean Expression (Higher)	gtex_max_mean_expr	Expression
