@@ -3,7 +3,7 @@
 
 #### Data analysis notebooks overview
 | Notebook                                | Figures          | Brief description                                        |
-| --------------------------------------- |:----------------:| --------------------------------------------------------:|
+| --------------------------------------- |:-----------------| ---------------------------------------------------------|
 | 01_identify_paralog_SLs_w_depmap.ipynb  | Fig. 1           | Derive bronze standard dataset of (non)-SL paralog pairs           |
 | 02_indiv_feature_analysis.ipynb         | Fig. 2A, S1      | Look at the indv. predictive power of 22 features of paralog pairs |
 | 03_train_classifier.ipynb               | Fig. 2B          | Train a random forest classifier w/ bronze standard data |
