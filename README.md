@@ -13,6 +13,20 @@
 | 07_experimental_validation       | Fig. 5C, 5E             | Graph siRNA screen results for *ASF1A/ASF1B* and *COPS7A/COPS7B* |
 | 08_human_vs_cerevisiae_paralogs  | NA                      | Compare the avg. family size for paralogs in humans vs. cerevisiae yeast |
 
+### Data processing notebooks overview:
+| Notebook                               | Brief description                                        |
+|:---------------------------------------|:---------------------------------------------------------|
+| 01_process_hgnc_id_map                 | Create map with HGNC symbol, Entrez ID, Ensembl ID and locus type (e.g. protein-coding) for each gene |
+| 02_process_ensembl_paralogs            | Generate list of protein-coding paralog pairs with min. 20% sequence identity + some feat. annotations |
+| 03_process_copy_number                 | Identify homozygous deletions from copy number and gene expression data |
+| paralog_features/01_process_protein_complexes | Compute protein complex membership and essentiality features for paralog pairs |
+| paralog_features/02_process_ppi        | Compute protein-protein interaction features for paralog pairs  |
+| paralog_features/03_process_orthologs  | Identify (essential) orthologs for paralog pairs and compute conservation score |
+| paralog_features/04_process_gtex_expression   | Compute expression features for paralog pairs |
+| paralog_features/05_merge_all_features | Generate full list of all paralog pairs annotated with all features - some features, incl. age, are computed in this notebook |
+| GI_screens/process_thompson_pairs      | Process gene pairs screened by Thompson et al., filter to overlap with our paralog pairs list  |
+| GI_screens/process_dede_pairs          | Process gene pairs screened by Dede et al., filter to overlap with our paralog pairs list  |
+
 
 
 ### To run Jupyter notebooks:
