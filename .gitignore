@@ -23,6 +23,8 @@ figures/
 # Do not store supplemental files
 local_data/supplemental_files
 
+webpage
+
 .DS_Store
 
 __pycache__/
