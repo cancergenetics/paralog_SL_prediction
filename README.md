@@ -32,7 +32,7 @@ These notebooks process raw/third party data for use in the analysis.
 | GI_screens/process_dede_pairs          | Process gene pairs screened by Dede et al., filter to overlap with our paralog pairs list  |
 
 ### Running CERES overview:
-These notebooks + R scripts are used to re-process logfold change data from DepMap CRISPR screens with [CERES](https://github.com/cancerdatasci/ceres), to remove multi-targetting sgRNAs. The notebooks can run in the conda environment, but the R scripts should be run independently (e.g. in R studio). Code to install the necessary Bioconductor packages + CERES is included in the R scripts. The R scripts also require the [bowtie](http://bowtie-bio.sourceforge.net/index.shtml) and [samtools](http://samtools.sourceforge.net/) command line tools which are only available for Linux/macOS.
+These notebooks + R scripts are used to re-process logfold change data from DepMap CRISPR screens with [CERES](https://github.com/cancerdatasci/ceres), to remove multi-targetting sgRNAs. The output from running all scripts in this folder is available as `local_data\processed\depmap20Q2\gene_scores_26_05_20.csv`. The notebooks can run in the conda environment, but the R scripts should be run independently (e.g. in R studio). Code to install the necessary Bioconductor packages + CERES is included in the R scripts. The R scripts also require the [bowtie](http://bowtie-bio.sourceforge.net/index.shtml) and [samtools](http://samtools.sourceforge.net/) command line tools which are only available for Linux/macOS.
 
 | Order | Notebook or R scripts                  | Brief description                                        |
 |:------|:---------------------------------------|:---------------------------------------------------------|
@@ -45,7 +45,8 @@ These notebooks + R scripts are used to re-process logfold change data from DepM
 
 ### To run Jupyter notebooks:
 * Obtain 3rd party data - sources are listed in data_sources
-    * Note: this is primarily needed for running notebooks in the 1_data_processing folder
+   * The folder for running CERES has its own data_sources file with the third party files that are only needed there
+   * Note: this is primarily needed for running notebooks in the 1_data_processing folder
 * Set path to 3rd party data directory in environment.yml (3rd_party_dir)
   * Note: this can also be set in the activate environment with: `conda env config vars set 3rd_party_data=my_dir`
 * Create [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) environment from the environment.yml file: `conda env create -f environment.yml`
